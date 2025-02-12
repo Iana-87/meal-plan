@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+body {
+  background: url(food.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+h1{
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #FEFBD8;
+  border-radius: 20px;
+  padding: 15px;
+  color: #012A26;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-add
+  {
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color: #B1D690;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+  
+}
+.button-delete
+  {
+    font-family: "Montserrat Alternates", sans-serif;
+    border: 0;
+    font-size: 15px;
+    background: none;
+    color: #B1D690;
+    font-weight: bolder;
+    color:#D84040;
+  
+}
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.whole-plan{
+  width: 70%;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myInput{
+  width: 70%;
+   height: 20px;
+   padding: 10px;
+   border-radius: 10px;
+   display: block;
+   margin-top: 30px;
+ 
+}
+
+textarea {
+  display: block;
+  border:  1px slid #FEFBD8;
+  margin-top: 30px;
+  width: 70%;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.selected{
+  background-color: #FEEC37;
+}
+
+.default{
+  background-color: #FEFBD8;
+}
+p{
+  color:#FEFBD8;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+}
+.title{
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #012A26;
+  font-size: 18px;
+}
+.titleone{
+  font-size: 14px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #012A26;
+}
+
+.meal-editing{
+  margin-left: 50px;
+  
+}
+
+
+
+@media all and (max-width: 1000px) {
+  h1{
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  .button-add{
+    font-size: 10px;
+  }
+  body{
+    height: 100vh;
+    margin: 0;
+
+  }
+  p{
+    margin-left: 20px;
+  }
+  .meal-editing{
+    width: 90%;
+    height: 100vh;
   }
 }
