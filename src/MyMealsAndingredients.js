@@ -31,9 +31,9 @@ const MyMealsAndIngredients = ({selectedDay, updateDay}) => {
 
    <textarea
     placeholder="List of ingredients"
-    id="mealForDay"
+    id="ingredients"
     value={selectedDay.ingredients}
-    onChange = {(e) => editMyMeal("ingrediens", e.target.value)}
+    onChange = {(e) => editMyMeal("ingredients", e.target.value)}
     />
     </div>
 </div>
